@@ -13,8 +13,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import rclpy
+import rclpy #this imports the main rclpy package, which is the ROS 2 client library for Python. rclpy provides the Python bindings for the ROS 2 
+                #middleware, allowing you to create ROS 2 nodes, publish and subscribe to topics, and interact with the ROS 2 system.
+
 from rclpy.node import Node
+
+
 from std_msgs.msg import String
 from sensor_msgs.msg import Image
 from vision_msgs.msg import Detection2D, Detection2DArray, ObjectHypothesisWithPose
