@@ -29,6 +29,19 @@ git clone https://github.com/NVIDIA-AI-IOT/nanoowl
 git clone https://github.com/NVIDIA-AI-IOT/torch2trt
 git clone --branch humble https://github.com/ros2/demos.git
 ```
+
+EDIT: IF IT FAILS,
+example of errors: 
+fatal: could not create work tree dir 'isaac_ros_common': Permission denied
+fatal: could not create work tree dir 'ROS2-NanoOWL': Permission denied
+fatal: could not create work tree dir 'nanoowl': Permission denied
+fatal: could not create work tree dir 'torch2trt': Permission denied
+fatal: could not create work tree dir 'demos': Permission denied
+
+use this
+Give all access: sudo chmod 777 folder
+Where the folder is where you want to clone the repos. In this case, it may be in /mnt/nova_ssd/workspaces/isaac_ros-dev/src (if you have mounted an ssd)
+
 3. Launch the docker container using the ```run_dev.sh``` script:
 ```
 cd ${ISAAC_ROS_WS}/src/isaac_ros_common
