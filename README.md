@@ -58,6 +58,8 @@ cd ${ISAAC_ROS_WS}/src/isaac_ros_common
       import torch
       torch.__version__
       ```
+**Successfully installed numpy-1.26.4**
+
    * **NVIDIA TensorRT**: If you’re developing on an NVIDIA Jetson, TensorRT is pre installed as part of JetPack. Verify the installation by running python from terminal, and then this command in the interactive Python interpreter: ```import tensorrt```. If it says ‘ModuleNotFound’, try the following command and check again following the steps above:
       ```
       sudo apt-get install python3-libnvinfer-dev
