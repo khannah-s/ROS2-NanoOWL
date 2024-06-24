@@ -38,6 +38,9 @@ class Nano_OWL_Subscriber(Node):
         self.declare_parameter('image_encoder_engine', '../data/owl_image_encoder_patch32.engine')
         self.declare_parameter('thresholds', rclpy.Parameter.Type.DOUBLE)
 
+
+      #SUBSCRIBER FOR BOTH TEXT AND IMAGE INPUT
+      
         # Subscriber for input query
         self.query_subscription = self.create_subscription(
             String,
